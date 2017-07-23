@@ -1,0 +1,58 @@
+** Recursion **
+
+1- In your own words, what is recursion?
+    When a function calls itself. 
+
+2- Why is it necessary to have a base case?
+    To know when the recursion should stop happening. 
+
+** Graphs **
+
+1- What is a graph?
+    A collection of nodes (vertices) linked by edges. 
+
+2- How is a graph different from a tree?
+    The graph allows loops within nodes. The tree doesn't. 
+
+3- Give an example of something that would be good to model with a graph.
+    A social network.
+
+
+** Performance of Different Data Structures **
+
+1- Fill in the runtimes for the following actions for the table below:
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)             O(1)    O(n)    O(1)    O(n)    O(n)    O(1)  
+Linked List                     O(n)    O(n)    *       O(1)    O(1)    O(n)
+Doubly-Linked list              O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)                X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)            X       X       O(1)    X       O(1)    X
+Stack (as Array, LL, or DLL)    X       X       *       X       X       O(1)
+Deque (as DLL)                  X       X       O(1)    O(1)    O(1)    O(1)         
+
+* Depends on wether or not you are keeping track of the tail. If so, it's constant (O(1)). If not, then it's linear, as you'd have to go through entire list to find the end before adding.
+
+
+2- Fill in Runtime and Memory:
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get         Add         Delete      Iterate     Memory
+Dictionary (Hash Map)   O(1)        O(1)        O(1)        O(n)        medium
+Set (Hash Map)          O(1)        O(1)        O(1)        O(n)        medium 
+Binary Search Tree      O(log n)    O(log n)    O(log n)    O(n)        low
+tree                    O(n)        O(1)        O(1)        O(n)        low
+
+
+** Sorting **
+
+1- Describe in words how the Bubble Sort algorithm works.
+    Bubble sort compares one item to the next, swapping them if they are in the wrong order. 
+
+2- Describe in words how the Merge Sort algorithm works.
+    Breaks the list in pairs, putting ordering each pair at time, and then regrouping them in quarters and then halfs, and then regruping it all at the end. (Divide and conquer)
+
+3- Describe in words how the Quick Sort algorithm works.
+    Quicksort uses a pivot to order the list. It also breaks the list in smaller pieces, and regroups them as it goes. (Divide and conquer)
+
